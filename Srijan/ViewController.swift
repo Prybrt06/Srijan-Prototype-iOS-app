@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var speakerProfile: UIImageView!
     @IBOutlet weak var speakerName: UILabel!
     @IBOutlet weak var speakerDescription: UILabel!
+    @IBOutlet weak var galleryControl: UIPageControl!
+    @IBOutlet weak var speakerControl: UIPageControl!
     
     let speakerNames = ["Shantanu Jain","Pushkar Raj","Global Rashid","Sankar Bora"]
     
@@ -29,6 +31,9 @@ class ViewController: UIViewController {
         
         speakerProfile.image = UIImage(named: "speakerImage\(j)")
         speakerName.text = speakerNames[0]
+        
+        galleryControl.currentPage = i-1;
+        speakerControl.currentPage = j;
         // Do any additional setup after loading the view.
     }
 
@@ -44,6 +49,8 @@ class ViewController: UIViewController {
         }
         
         gallery.image = UIImage(named: "Image\(i)")
+        
+        galleryControl.currentPage = i-1
     }
     
     @IBAction func leftScroll(_ sender: UIButton) {
@@ -58,6 +65,8 @@ class ViewController: UIViewController {
         }
         
         gallery.image = UIImage(named: "Image\(i)")
+        
+        galleryControl.currentPage = i-1
     }
     
     @IBAction func speakerRightScroll(_ sender: UIButton) {
@@ -74,6 +83,8 @@ class ViewController: UIViewController {
         speakerProfile.image = UIImage(named: "speakerImage\(j)")
         speakerName.text = speakerNames[j]
         speakerDescription.text = speakerDescriptions[j]
+        
+        speakerControl.currentPage = j
     }
     
     @IBAction func speakerLeftScroll(_ sender: UIButton) {
@@ -90,6 +101,8 @@ class ViewController: UIViewController {
         speakerProfile.image = UIImage(named: "speakerImage\(j)")
         speakerName.text = speakerNames[j]
         speakerDescription.text = speakerDescriptions[j]
+        
+        speakerControl.currentPage = j
     }
     
 }
