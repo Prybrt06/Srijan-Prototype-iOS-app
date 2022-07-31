@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Srijan3Logo.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
