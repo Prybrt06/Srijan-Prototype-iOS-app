@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ViewController: UIViewController {
 
@@ -38,7 +39,6 @@ class ViewController: UIViewController {
         
         linkedInButton.addTarget(self, action: Selector(("linkedInPressed")), for: .touchUpInside)
         
-        navigationItem.hidesBackButton = true
         // Do any additional setup after loading the view.
     }
 
@@ -111,9 +111,19 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func linkedInPressed(_ sender: UIButton) {
-        UIApplication.shared.openURL(NSURL(string: "http://www.google.com")! as URL)
+    @IBAction func logoutButtonPressed(_ sender: UIBarButtonItem) {
+        do
+        {
+            try Auth.auth().signOut()
+            self.navigationController?.popToRootViewController(animated: true)
+        }
+        
+        catch let signOutError as NSError
+        {
+            print("Error signing out: %@", signOutError)
+        }
     }
+    
 }
 
 

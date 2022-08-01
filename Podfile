@@ -9,5 +9,6 @@ target 'Srijan' do
 
   pod "FirebaseCore"
   pod "FirebaseFirestore"
+  pod "FirebaseAuth"
 
 end

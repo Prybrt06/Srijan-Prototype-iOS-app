@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A3FA09E701FD797B86FB389 /* Pods_Srijan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5167E6F153F4FF5E38FEA79D /* Pods_Srijan.framework */; };
 		B458FCDD2897EDCA00BCC87E /* landingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B458FCDC2897EDCA00BCC87E /* landingViewController.swift */; };
+		B484AD40289847FE005E12D1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B484AD3F289847FE005E12D1 /* Constants.swift */; };
 		B485A6A32896C3F600B56FFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B485A6A22896C3F600B56FFE /* AppDelegate.swift */; };
 		B485A6A52896C3F600B56FFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B485A6A42896C3F600B56FFE /* SceneDelegate.swift */; };
 		B485A6A72896C3F600B56FFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B485A6A62896C3F600B56FFE /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 		5167E6F153F4FF5E38FEA79D /* Pods_Srijan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Srijan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C3457199F96E5638FA4B376 /* Pods-Srijan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Srijan.release.xcconfig"; path = "Target Support Files/Pods-Srijan/Pods-Srijan.release.xcconfig"; sourceTree = "<group>"; };
 		B458FCDC2897EDCA00BCC87E /* landingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = landingViewController.swift; sourceTree = "<group>"; };
+		B484AD3F289847FE005E12D1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B485A69F2896C3F600B56FFE /* Srijan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Srijan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B485A6A22896C3F600B56FFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B485A6A42896C3F600B56FFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,7 +58,6 @@
 				E6E930266A1514F9666E5F10 /* Pods-Srijan.debug.xcconfig */,
 				8C3457199F96E5638FA4B376 /* Pods-Srijan.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -100,6 +101,7 @@
 				B458FCDC2897EDCA00BCC87E /* landingViewController.swift */,
 				B4F489DB289823AE0030BBE5 /* LoginViewController.swift */,
 				B4F489DE289824040030BBE5 /* RegisterViewController.swift */,
+				B484AD3F289847FE005E12D1 /* Constants.swift */,
 			);
 			path = Srijan;
 			sourceTree = "<group>";
@@ -227,6 +229,7 @@
 				B485A6A32896C3F600B56FFE /* AppDelegate.swift in Sources */,
 				B458FCDD2897EDCA00BCC87E /* landingViewController.swift in Sources */,
 				B4F489DF289824040030BBE5 /* RegisterViewController.swift in Sources */,
+				B484AD40289847FE005E12D1 /* Constants.swift in Sources */,
 				B4F489DC289823AE0030BBE5 /* LoginViewController.swift in Sources */,
 				B485A6A52896C3F600B56FFE /* SceneDelegate.swift in Sources */,
 			);
