@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "inkeinBG.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

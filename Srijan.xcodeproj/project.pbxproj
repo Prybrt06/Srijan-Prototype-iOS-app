@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A3FA09E701FD797B86FB389 /* Pods_Srijan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5167E6F153F4FF5E38FEA79D /* Pods_Srijan.framework */; };
+		B458FCDD2897EDCA00BCC87E /* landingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B458FCDC2897EDCA00BCC87E /* landingViewController.swift */; };
 		B485A6A32896C3F600B56FFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B485A6A22896C3F600B56FFE /* AppDelegate.swift */; };
 		B485A6A52896C3F600B56FFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B485A6A42896C3F600B56FFE /* SceneDelegate.swift */; };
 		B485A6A72896C3F600B56FFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B485A6A62896C3F600B56FFE /* ViewController.swift */; };
 		B485A6AA2896C3F600B56FFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B485A6A82896C3F600B56FFE /* Main.storyboard */; };
 		B485A6AC2896C3F700B56FFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B485A6AB2896C3F700B56FFE /* Assets.xcassets */; };
 		B485A6AF2896C3F700B56FFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B485A6AD2896C3F700B56FFE /* LaunchScreen.storyboard */; };
+		B4F489DC289823AE0030BBE5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F489DB289823AE0030BBE5 /* LoginViewController.swift */; };
+		B4F489DF289824040030BBE5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F489DE289824040030BBE5 /* RegisterViewController.swift */; };
+		B4F489E12898389F0030BBE5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4F489E02898389F0030BBE5 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5167E6F153F4FF5E38FEA79D /* Pods_Srijan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Srijan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C3457199F96E5638FA4B376 /* Pods-Srijan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Srijan.release.xcconfig"; path = "Target Support Files/Pods-Srijan/Pods-Srijan.release.xcconfig"; sourceTree = "<group>"; };
+		B458FCDC2897EDCA00BCC87E /* landingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = landingViewController.swift; sourceTree = "<group>"; };
 		B485A69F2896C3F600B56FFE /* Srijan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Srijan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B485A6A22896C3F600B56FFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B485A6A42896C3F600B56FFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,10 @@
 		B485A6AB2896C3F700B56FFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B485A6AE2896C3F700B56FFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B485A6B02896C3F700B56FFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4F489DB289823AE0030BBE5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B4F489DE289824040030BBE5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		B4F489E02898389F0030BBE5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E6E930266A1514F9666E5F10 /* Pods-Srijan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Srijan.debug.xcconfig"; path = "Target Support Files/Pods-Srijan/Pods-Srijan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A3FA09E701FD797B86FB389 /* Pods_Srijan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51A91797592716488FF683CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6E930266A1514F9666E5F10 /* Pods-Srijan.debug.xcconfig */,
+				8C3457199F96E5638FA4B376 /* Pods-Srijan.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		65B75C4A1585B9A18FD0B11A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5167E6F153F4FF5E38FEA79D /* Pods_Srijan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B485A6962896C3F600B56FFE = {
 			isa = PBXGroup;
 			children = (
 				B485A6A12896C3F600B56FFE /* Srijan */,
 				B485A6A02896C3F600B56FFE /* Products */,
+				51A91797592716488FF683CB /* Pods */,
+				65B75C4A1585B9A18FD0B11A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +96,10 @@
 				B485A6AB2896C3F700B56FFE /* Assets.xcassets */,
 				B485A6AD2896C3F700B56FFE /* LaunchScreen.storyboard */,
 				B485A6B02896C3F700B56FFE /* Info.plist */,
+				B4F489E02898389F0030BBE5 /* GoogleService-Info.plist */,
+				B458FCDC2897EDCA00BCC87E /* landingViewController.swift */,
+				B4F489DB289823AE0030BBE5 /* LoginViewController.swift */,
+				B4F489DE289824040030BBE5 /* RegisterViewController.swift */,
 			);
 			path = Srijan;
 			sourceTree = "<group>";
@@ -74,9 +111,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B485A6B32896C3F700B56FFE /* Build configuration list for PBXNativeTarget "Srijan" */;
 			buildPhases = (
+				ACE6B5D6475E69414BC606DF /* [CP] Check Pods Manifest.lock */,
 				B485A69B2896C3F600B56FFE /* Sources */,
 				B485A69C2896C3F600B56FFE /* Frameworks */,
 				B485A69D2896C3F600B56FFE /* Resources */,
+				5FDA85F8C189DE3E1380B468 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -111,6 +150,9 @@
 				Base,
 			);
 			mainGroup = B485A6962896C3F600B56FFE;
+			packageReferences = (
+				B4F489E228983C520030BBE5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = B485A6A02896C3F600B56FFE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,12 +168,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				B485A6AF2896C3F700B56FFE /* LaunchScreen.storyboard in Resources */,
+				B4F489E12898389F0030BBE5 /* GoogleService-Info.plist in Resources */,
 				B485A6AC2896C3F700B56FFE /* Assets.xcassets in Resources */,
 				B485A6AA2896C3F600B56FFE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5FDA85F8C189DE3E1380B468 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Srijan/Pods-Srijan-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Srijan/Pods-Srijan-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Srijan/Pods-Srijan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACE6B5D6475E69414BC606DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Srijan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B485A69B2896C3F600B56FFE /* Sources */ = {
@@ -140,6 +225,9 @@
 			files = (
 				B485A6A72896C3F600B56FFE /* ViewController.swift in Sources */,
 				B485A6A32896C3F600B56FFE /* AppDelegate.swift in Sources */,
+				B458FCDD2897EDCA00BCC87E /* landingViewController.swift in Sources */,
+				B4F489DF289824040030BBE5 /* RegisterViewController.swift in Sources */,
+				B4F489DC289823AE0030BBE5 /* LoginViewController.swift in Sources */,
 				B485A6A52896C3F600B56FFE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +370,7 @@
 		};
 		B485A6B42896C3F700B56FFE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6E930266A1514F9666E5F10 /* Pods-Srijan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +399,7 @@
 		};
 		B485A6B52896C3F700B56FFE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C3457199F96E5638FA4B376 /* Pods-Srijan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -358,6 +448,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B4F489E228983C520030BBE5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = B485A6972896C3F600B56FFE /* Project object */;
 }

@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var speakerDescription: UILabel!
     @IBOutlet weak var galleryControl: UIPageControl!
     @IBOutlet weak var speakerControl: UIPageControl!
+    @IBOutlet weak var linkedInButton: UIButton!
     
     let speakerNames = ["Shantanu Jain","Pushkar Raj","Global Rashid","Sankar Bora"]
     
@@ -34,6 +35,10 @@ class ViewController: UIViewController {
         
         galleryControl.currentPage = i-1;
         speakerControl.currentPage = j;
+        
+        linkedInButton.addTarget(self, action: Selector(("linkedInPressed")), for: .touchUpInside)
+        
+        navigationItem.hidesBackButton = true
         // Do any additional setup after loading the view.
     }
 
@@ -105,5 +110,10 @@ class ViewController: UIViewController {
         speakerControl.currentPage = j
     }
     
+    
+    @IBAction func linkedInPressed(_ sender: UIButton) {
+        UIApplication.shared.openURL(NSURL(string: "http://www.google.com")! as URL)
+    }
 }
+
 
