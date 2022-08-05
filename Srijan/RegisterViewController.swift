@@ -18,7 +18,40 @@ class RegisterViewController: UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        
         warningLabel.text = ""
+    }
+    
+}
+
+//MARK: - UITextFieldDelegate
+
+extension RegisterViewController: UITextFieldDelegate
+{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if let email = emailTextField.text, let password = passwordTextField.text
+        {
+            Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+                if let e = error
+                {
+                    self.warningLabel.text = e.localizedDescription
+                    self.warningLabel.textColor = UIColor.red
+                }
+                
+                else
+                {
+                    self.warningLabel.text = ""
+                    self.performSegue(withIdentifier: K.registerSegue, sender: self)
+                }
+            }
+        }
+        
+        emailTextField.endEditing(true)
+        passwordTextField.endEditing(true)
+        
+        return true;
     }
     
     @IBAction func registerButtonPressed(_ sender: UIButton) {
@@ -38,6 +71,8 @@ class RegisterViewController: UIViewController
                 }
             }
         }
+        
+        emailTextField.endEditing(true)
+        passwordTextField.endEditing(true)
     }
-    
 }
