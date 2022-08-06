@@ -70,6 +70,9 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="FJz-m7-a4j"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="LcT-yf-gK4" id="DxZ-eS-8Rq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dGF-kV-VUp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -80,7 +83,7 @@
             <objects>
                 <viewController id="3gk-fs-vmD" customClass="RegisterViewController" customModule="Srijan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PMi-hS-gCB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ZAv-WB-hrv">
@@ -168,7 +171,7 @@
             <objects>
                 <viewController id="UoB-5D-z8L" customClass="LoginViewController" customModule="Srijan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d0S-uJ-ySv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="1fV-VE-ATA">
@@ -264,11 +267,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Srijan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="946"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzu-Un-DkM">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="946"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="912"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oXm-7b-qtE">
                                         <rect key="frame" x="0.0" y="-106" width="414" height="1500"/>
@@ -578,7 +581,7 @@
             <objects>
                 <viewController id="voo-XF-7YF" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qF9-Jh-ykR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="546"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tWy-FH-3XH">
@@ -664,11 +667,11 @@
             <objects>
                 <viewController id="aPy-b5-ggO" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Pa-Cc-uPK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="2246"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="2300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F2c-sr-smU">
-                                <rect key="frame" x="0.0" y="-44" width="414" height="2334"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="2300"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DR8-4w-EkG">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
@@ -917,8 +920,8 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="GZH-r2-wRV"/>
-        <segue reference="KfF-Yq-n7W"/>
-        <segue reference="s7G-9z-hH8"/>
+        <segue reference="SBJ-aj-BBu"/>
+        <segue reference="VLl-0B-svl"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Image1" width="1080" height="618"/>
